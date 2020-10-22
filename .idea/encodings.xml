@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitmq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/trade" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/trade/src/main/java/com/test/trade/service/impl/TradeServiceImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/trade/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://C:/zzwl/zzwl-java-application/microservice-trade/src/main/resources/properties/config-environ-dev.properties" charset="UTF-8" />
+    <file url="file://C:/zzwl/zzwl-java-application/microservice-trade/src/main/resources/properties/config-environ-test.properties" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

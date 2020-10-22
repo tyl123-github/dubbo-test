@@ -1,0 +1,29 @@
+server:
+  port: 8881
+
+---
+spring:
+  application:
+    name: user
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+dubbo:
+  scan:
+    base-packages: com.test.user
+  protocols:
+    dubbo:
+      name: dubbo
+      port: -1
+  registry:
+    address: nacos://localhost:8848
+  cloud:
+    subscribed-services: 'trade'
+  provider:
+    timeout: 600000
+    #负载均衡策略，可选值：random,roundrobin,leastactive，分别表示：随机，轮询，最少活跃调用
+    loadbalance: leastactive
+  consumer:
+    check: false
+    validation: true

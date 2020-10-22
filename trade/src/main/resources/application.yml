@@ -1,0 +1,31 @@
+server:
+  port: 8882
+
+spring:
+  application:
+    name: trade
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+dubbo:
+  scan:
+    base-packages: com.test.trade.service.rpc
+  protocols:
+    dubbo:
+      name: dubbo
+      port: -1
+  registry:
+    address: nacos://localhost:8848
+    username: nacos
+    password: nacos
+  cloud:
+    subscribed-services: 'user'
+  provider:
+    #远程服务调用超时时间(毫秒)
+    timeout: 60000
+    #负载均衡策略，可选值：random,roundrobin,leastactive，分别表示：随机，轮询，最少活跃调用
+    loadbalance: leastactive
+  consumer:
+    check: false
+    validation: true
